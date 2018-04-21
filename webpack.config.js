@@ -18,4 +18,11 @@ module.exports = {
       filename: './index.html',
     }),
   ],
+  devServer: {
+    inline: true,
+    port: 8080,
+    historyApiFallback: {
+      index: '/'
+    }
+  }
 };
