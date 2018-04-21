@@ -1,6 +1,12 @@
 import React from 'react';
-import {Switch, Route} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
-const Header = () => <div>Header</div>;
+const Header = () => (
+  <div>
+    <Link to='/about'>About</Link>
+    <Link to='/projects'>Projects</Link>
+    <Link to='/contact'>Contact</Link>
+  </div>
+);
 
 export default Header;

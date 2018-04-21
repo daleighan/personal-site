@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Project = () => <div>Project</div>;
+const Project = () => <div>Projects</div>;
 
 export default Project;
 

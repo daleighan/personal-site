@@ -10,6 +10,6 @@ ReactDOM.render(
     <Provider store={initStore}>
       <App />
     </Provider>
-  </StaticRouter>,
+  </BrowserRouter>,
   document.getElementById('app'),
 );
