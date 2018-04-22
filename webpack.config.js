@@ -6,10 +6,9 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-        },
+        use: ['babel-loader'],
       },
+      {test: /\.css$/, use: [{loader: 'css-loader'}]},
     ],
   },
   plugins: [
@@ -22,7 +21,7 @@ module.exports = {
     inline: true,
     port: 8080,
     historyApiFallback: {
-      index: '/'
-    }
-  }
+      index: '/',
+    },
+  },
 };
