@@ -4,7 +4,6 @@ import App from './components/App';
 import {BrowserRouter, browserHistory} from 'react-router-dom';
 import {initStore} from '../store/';
 import {Provider} from 'react-redux';
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
   <BrowserRouter history={browserHistory}>
