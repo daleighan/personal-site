@@ -8,4 +8,3 @@ export const initialFetch = () => dispatch => {
     })
     .catch(err => console.log(err));
 };
-

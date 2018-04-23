@@ -1,5 +1,6 @@
 const initialState = {
   projects: [],
+  projectsFetched: false,
 };
 
 const projectReducer = (state = initialState, action) => {
@@ -7,6 +8,7 @@ const projectReducer = (state = initialState, action) => {
     case 'FETCH_PROJECTS':
       return {
         ...state,
+        projectsFetched: true,
         projects: action.payload,
       };
     default:
