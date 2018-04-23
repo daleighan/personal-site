@@ -4,7 +4,7 @@
   "description": "Alex Leigh's personal site",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node server/dev-server.js",
     "dev": "webpack --mode development ./src/index.js --output ./static/bundle.js --watch",
     "build": "webpack --mode production ./src/index.js --output ./static/bundle.js"
   },
@@ -23,6 +23,7 @@
     "bootstrap": "^4.0.0",
     "express": "^4.16.3",
     "node-sass": "^4.8.3",
+    "popper": "^1.0.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-redux": "^5.0.7",
