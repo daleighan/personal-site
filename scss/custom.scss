@@ -9,4 +9,9 @@ $dark: #4056A1;
 
 $body-bg: #C5CBE3;
 
+body {
+  font-family: 'Shadows Into Light', cursive;
+}
+
+
 @import "node_modules/bootstrap/scss/bootstrap";
