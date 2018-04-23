@@ -1,6 +1,13 @@
 import React from 'react';
-import {Jumboron} from 'reactstrap';
+import {Jumbotron} from 'reactstrap';
+import '../../scss/homeStyles.scss';
 
-const Home = () => <div>Home</div>;
+const Home = () => (
+  <div>
+    <Jumbotron className="center-jumbotron">
+      Jumbotron intro here!
+    </Jumbotron>
+  </div>
+);
 
 export default Home;

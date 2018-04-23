@@ -14,7 +14,16 @@ class Projects extends Component {
   }
 
   render = () => {
-    return <div>Home</div>;
+    const {projectsFetched} = this.props;
+    return (
+      <div>
+        {!projectsFetched ? (
+          <div>Projects Not Fetched</div>
+        ) : (
+          <div>Projects Fetched</div>
+        )}
+      </div>
+    );
   };
 }
 
