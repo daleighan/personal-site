@@ -12,12 +12,12 @@ const Header = () => (
     <Nav>
       <NavItem>
         <NavLink tag={Link} to="/about">
-          About
+          About Me
         </NavLink>
       </NavItem>
       <NavItem>
         <NavLink tag={Link} to="/projects">
-          Projects
+          My Projects
         </NavLink>
       </NavItem>
       <NavItem>

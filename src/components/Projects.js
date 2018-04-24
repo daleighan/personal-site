@@ -9,8 +9,10 @@ class Projects extends Component {
   }
 
   componentDidMount() {
-    const {initialFetch} = this.props;
-    initialFetch();
+    const {projectsFetched, initialFetch} = this.props;
+    if (!projectsFetched) {
+      initialFetch();
+    }
   }
 
   render = () => {

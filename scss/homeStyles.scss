@@ -1,6 +1,28 @@
 @import 'variables';
 
 .center-jumbotron {
-  margin: 3rem 2rem;
-  color: $danger !important;
+  height: 20em;
+  margin: 3em;
+  color: $danger;
+}
+
+.welcome {
+  font-family: 'Roboto', sans-serif;
+}
+
+.subtitle {
+    -webkit-animation: 3s ease 0s normal forwards 1 fadein;
+    animation: 3s ease 0s normal forwards 1 fadein;
+}
+
+@keyframes fadein {
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@-webkit-keyframes fadein {
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:1; }
 }
