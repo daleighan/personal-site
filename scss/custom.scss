@@ -2,6 +2,7 @@
 
 body {
   font-family: 'Shadows Into Light', cursive;
+  user-select: none;
 }
 
 @import "node_modules/bootstrap/scss/bootstrap";
