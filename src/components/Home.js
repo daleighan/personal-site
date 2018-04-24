@@ -5,6 +5,7 @@ import {connect} from 'react-redux';
 import {Jumbotron} from 'reactstrap';
 import Typist from 'react-typist';
 import '../../scss/homeStyles.scss';
+import '../../node_modules/react-typist/dist/typist.css';
 
 class Home extends Component {
   constructor(props) {
@@ -24,7 +25,9 @@ class Home extends Component {
       <div>
         <Jumbotron className="center-jumbotron">
           <h1 className="welcome">
-            <Typist speed={45} startDelay={2500}>Welcome to my portfolio!</Typist>
+            <Typist speed={45} startDelay={2500}>
+              Welcome to my portfolio!
+            </Typist>
           </h1>
           <div className="subtitle">
             <hr className="my-2" />

@@ -2,7 +2,7 @@
 
 .center-jumbotron {
   min-height: 16em;
-  margin: 3em;
+  margin: 3em 1em;
   color: $danger;
   background-color: $primary!important;
   position: relative;
@@ -34,8 +34,8 @@
 
 .subtitle {
   visibility: hidden;
-  -webkit-animation: 1.5s linear 4.2s normal forwards 1 fadein;
-  animation: 1.5s linear 4.2s normal forwards 1 fadein;
+  -webkit-animation: 1.5s ease 4.2s normal forwards 1 fadein;
+  animation: 1.5s ease 4.2s normal forwards 1 fadein;
 }
 
 @keyframes fadein {
