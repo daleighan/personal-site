@@ -8,18 +8,32 @@
   line-height: 60px;
   background-color: $info;
   color: $success;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.footer > img {
-  width: 40px;
-  height: 40px;
-  margin: 0 0.4em;
+
+.footer > .icon-holder {
+  margin: 0 1em;
+}
+
+.footer-icon {
+  width: 36px;
+  height: 36px;
 }
 
 @media (min-width: 480px) {
-  .footer > img {
+  .footer {
+    display: inline;
+    text-align: right;
+    padding-right: 0.5em;
+  }
+  .footer > icon-holder {
+    margin: 0 0.1em;
+  }
+  .footer-icon {
     width: 25px;
     height: 25px;
-    margin: 0 0.1em;
   }
 }
