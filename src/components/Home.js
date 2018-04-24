@@ -3,7 +3,7 @@ import {initialFetch} from '../../store/actions/projectActions';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import {Jumbotron} from 'reactstrap';
-import Typing from 'react-typing-animation';
+import Typist from 'react-typist';
 import '../../scss/homeStyles.scss';
 
 class Home extends Component {
@@ -24,11 +24,11 @@ class Home extends Component {
       <div>
         <Jumbotron className="center-jumbotron">
           <h1 className="welcome">
-            <Typing speed={20}>Welcome to my portfolio site!</Typing>
+            <Typist speed={45} startDelay={2500}>Welcome to my portfolio!</Typist>
           </h1>
           <div className="subtitle">
             <hr className="my-2" />
-            <div>
+            <div className="welcome">
               Please use the navbar at the top of the page to find out a bit
               more about me, my work and my philosophy.
             </div>
