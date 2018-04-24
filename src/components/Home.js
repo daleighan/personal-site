@@ -22,7 +22,7 @@ class Home extends Component {
   render = () => {
     const {projectsFetched} = this.props;
     return (
-      <div>
+      <div className="container">
         <Jumbotron className="center-jumbotron">
           <h1 className="welcome">
             <Typist speed={45} startDelay={2500}>
