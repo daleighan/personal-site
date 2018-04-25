@@ -1,8 +1,15 @@
 @import 'variables';
 
+.outer {
+  height: 74vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .center-jumbotron {
   min-height: 30%;
-  margin: 2em 1em;
+  margin: 0 1em;
   color: $danger;
   background-color: $primary!important;
   position: relative;

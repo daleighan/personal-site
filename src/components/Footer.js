@@ -9,7 +9,7 @@ const Footer = () => (
         <img className="footer-icon" src="email.png" />
       </a>
       <UncontrolledTooltip autohide={false} placement="top" target="emailTooltip">
-        Hello world!
+        <a href="mailto:daleighan@gmail.com" className="no-underline">Email Me</a>
       </UncontrolledTooltip>
     </span>
     <span className="icon-holder">
@@ -17,7 +17,7 @@ const Footer = () => (
         <img className="footer-icon" src="cellphone-android.png" />
       </a>
       <UncontrolledTooltip autohide={false} placement="top" target="phoneTooltip">
-        Hello world!
+        <a href="tel:1-202-550-0872" className="no-underline">Call Me</a> 
       </UncontrolledTooltip>
     </span>
     <span className="icon-holder">
@@ -25,7 +25,7 @@ const Footer = () => (
         <img className="footer-icon" src="github-box.png" />
       </a>
       <UncontrolledTooltip autohide={false} placement="top" target="githubTooltip">
-        Hello world!
+        <a href="https://github.com/daleighan" className="no-underline">My GitHub</a>
       </UncontrolledTooltip>
     </span>
     <span className="icon-holder">
@@ -33,7 +33,7 @@ const Footer = () => (
         <img className="footer-icon" src="linkedin-box.png" />
       </a>
       <UncontrolledTooltip autohide={false} placement="top" target="linkedinTooltip">
-        Hello world!
+        <a href="https://www.linkedin.com/in/alexander-leigh" className="no-underline">My LinkedIn</a>
       </UncontrolledTooltip>
     </span>
   </div>
