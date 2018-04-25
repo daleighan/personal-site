@@ -32,7 +32,7 @@ class Home extends Component {
           <div className="subtitle">
             <hr className="my-2" />
             <div className="welcome">
-              Please use the navbar at the top of the page to find out a bit
+              Please use the navbar at the top of the page to find out a little bit
               more about me, my work and my philosophy.
             </div>
           </div>
