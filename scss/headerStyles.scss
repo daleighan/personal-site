@@ -2,6 +2,18 @@
 
 .nav-link {
   font-family: 'Shadows Into Light', cursive;
-  font-size: 1.3rem;
+  font-size: 1.37em;
+}
+
+@media(max-width: 360px) {
+  .nav-link {
+    font-size: 1em;
+  }
+  .welcome-head {
+    font-size: 0.9em;
+  }
+  .center-jumbotron {
+    height: 65%;
+  }
 }
 

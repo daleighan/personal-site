@@ -7,7 +7,7 @@ import '../../scss/headerStyles.scss';
 const Header = () => (
   <Navbar color="dark" light>
     <NavLink tag={Link} to="/">
-      Alexander Leigh: Full Stack Developer
+      Alex Leigh: Full Stack Developer
     </NavLink>
     <Nav>
       <NavItem>
@@ -22,7 +22,7 @@ const Header = () => (
       </NavItem>
       <NavItem>
         <NavLink tag={Link} to="/contact">
-          Get In Touch
+          Get In Touch!
         </NavLink>
       </NavItem>
     </Nav>

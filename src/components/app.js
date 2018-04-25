@@ -7,7 +7,7 @@ import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 
 const App = () => (
-  <div>
+  <div style={{height: '74vh'}}>
     <Header />
     <Routes />
     <Footer />
