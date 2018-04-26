@@ -5,13 +5,31 @@ import About from './About';
 import Projects from './Projects';
 import Contact from './Contact';
 
-const Routes = () => (
+const routes = [
+  {
+    path: '/',
+    component: Home,
+  },
+  {
+    path: '/about',
+    component: About,
+  },
+  {
+    path: '/projects',
+    component: Projects,
+  },
+  {
+    path: '/contact',
+    component: Contact,
+  },
+];
+
+const Router = () => (
   <Switch>
-    <Route exact path={'/'} component={Home} />
-    <Route path={'/about'} component={About} />
-    <Route path={'/projects'} component={Projects} />
-    <Route path={'/contact'} component={Contact} />
+    {routes.map((route, i) => (
+      <Route exact path={route.path} component={route.component} key={i} />
+    ))}
   </Switch>
 );
 
-export default Routes;
+export default Router;
