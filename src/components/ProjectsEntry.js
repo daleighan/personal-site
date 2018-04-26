@@ -6,8 +6,13 @@ const ProjectsEntry = ({project}) => {
   return (
     <Card>
       <CardTitle>{project.projectName}</CardTitle>
-      <CardImg width="100%" src={project.pictures[0].src} alt={project.projectName} />
+      <CardImg
+        width="100%"
+        src={project.pictures[0].src}
+        alt={project.projectName}
+      />
       <CardBody>{project.blurb}</CardBody>
+      <Button color="info" size="sm">Learn More</Button>
     </Card>
   );
 };
