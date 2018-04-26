@@ -12,7 +12,7 @@ const ProjectsEntry = ({project}) => {
         alt={project.projectName}
       />
       <CardBody>{project.blurb}</CardBody>
-      <Button color="info" size="sm">Learn More</Button>
+      <Button className="btn-projects" color="info" size="sm">Learn More</Button>
     </Card>
   );
 };

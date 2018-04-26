@@ -21,7 +21,7 @@ class Projects extends Component {
   render = () => {
     const {projectsFetched, projects} = this.props;
     return (
-      <div>
+      <div className="projects-body">
         {!projectsFetched ? (
           <div>Projects Not Fetched</div>
         ) : (
