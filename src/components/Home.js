@@ -25,7 +25,7 @@ class Home extends Component {
       <div className="container outer">
         <Jumbotron className="center-jumbotron">
           <h1 className="welcome">
-            <Typist className="welcome-head" speed={45} startDelay={2500}>
+            <Typist className="welcome-head" speed={45} startDelay={1500}>
               Welcome to my portfolio!
             </Typist>
           </h1>

@@ -17,3 +17,11 @@
   }
 }
 
+@media(max-width: 667px) and (orientation: landscape) {
+  .nav-link {
+    font-size: 1em;
+  }
+  .welcome-head {
+    font-size: 0.9em;
+  }
+}

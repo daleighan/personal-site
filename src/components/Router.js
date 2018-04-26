@@ -4,6 +4,7 @@ import Home from './Home';
 import About from './About';
 import Projects from './Projects';
 import Contact from './Contact';
+import '../../scss/routerStyles.scss';
 
 const routes = [
   {
@@ -25,11 +26,15 @@ const routes = [
 ];
 
 const Router = () => (
-  <Switch>
-    {routes.map((route, i) => (
-      <Route exact path={route.path} component={route.component} key={i} />
-    ))}
-  </Switch>
+  <div className="router">
+    <Switch>
+      {routes.map((route, i) => {
+        return (
+          <Route exact path={route.path} component={route.component} key={i} />
+        );
+      })}
+    </Switch>
+  </div>
 );
 
 export default Router;
