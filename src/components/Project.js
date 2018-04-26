@@ -4,10 +4,26 @@ import {connect} from 'react-redux';
 import {initialFetch} from '../../store/actions/projectActions';
 
 class Project extends Component {
+  constructor(props) {
+    super(props);
+  }
+  
+  componentDidMount() {
+    const {projectsFetched, initialFetch} = this.props;
+    if (!projectsFetched) {
+      initialFetch();
+    }
+  }
+
   render = () => {
+    const {projectsFetched, projects} = this.props;
     return (
       <div>
-        <div>Empty Project Page</div>
+        {!projectsFetched ? (
+          <div>Loading</div>
+        ) : (
+          <div>Empty Project Page</div>
+        )}
       </div>
     );
   };

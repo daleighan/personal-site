@@ -55,7 +55,7 @@ const Router = () => {
               <Route
                 exact={exact}
                 path={path}
-                render={(props) => <Component props={props} />}
+                render={(props) => <Component nav={props} />}
                 key={i}
               />
             );
