@@ -21,7 +21,6 @@ class Home extends Component {
 
   render = () => {
     const {projectsFetched} = this.props;
-    console.log(this.props);
     return (
       <div className="container outer">
         <Jumbotron className="center-jumbotron">

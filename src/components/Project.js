@@ -7,7 +7,7 @@ class Project extends Component {
   constructor(props) {
     super(props);
   }
-  
+
   componentDidMount() {
     const {id} = this.props.nav.match.params;
     const {projectsFetched, fetchProject} = this.props;
@@ -16,15 +16,18 @@ class Project extends Component {
     }
   }
 
+  componentDidUpdate() {
+    const {projectsFetched, currentProject, nav} = this.props;
+    if (projectsFetched && !currentProject) {
+      nav.history.push('/projects');
+    }
+  }
+
   render = () => {
     const {projectsFetched, projects} = this.props;
     return (
       <div>
-        {!projectsFetched ? (
-          <div>Loading</div>
-        ) : (
-          <div>Empty Project Page</div>
-        )}
+        {!projectsFetched ? <div>Loading</div> : <div>Empty Project Page</div>}
       </div>
     );
   };
@@ -34,6 +37,7 @@ const mapStateToProps = ({projectReducer}) => {
   return {
     projectsFetched: projectReducer.projectsFetched,
     projects: projectReducer.projects,
+    currentProject: projectReducer.currentProject,
   };
 };
 
