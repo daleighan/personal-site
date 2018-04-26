@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import ProjectsEntry from './ProjectsEntry';
 import {CardGroup} from 'reactstrap';
-import {initialFetch} from '../../store/actions/projectActions';
+import {initialFetch, setProject} from '../../store/actions/projectActions';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import '../../scss/projectsStyles.scss';
@@ -19,7 +19,7 @@ class Projects extends Component {
   }
 
   render = () => {
-    const {projectsFetched, projects} = this.props;
+    const {projectsFetched, projects, setProject, nav} = this.props;
     return (
       <div className="projects-body">
         {!projectsFetched ? (
@@ -27,7 +27,12 @@ class Projects extends Component {
         ) : (
           <CardGroup>
             {projects.map(project => (
-              <ProjectsEntry project={project} key={project.projectName} />
+              <ProjectsEntry
+                project={project}
+                setProject={setProject}
+                nav={nav}
+                key={project.projectName}
+              />
             ))}
           </CardGroup>
         )}
@@ -46,6 +51,7 @@ const mapStateToProps = ({projectReducer}) => {
 const mapDispatchToProps = dispatch => {
   return {
     initialFetch: bindActionCreators(initialFetch, dispatch),
+    setProject: bindActionCreators(setProject, dispatch),
   };
 };
 

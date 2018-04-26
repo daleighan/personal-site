@@ -22,3 +22,8 @@ export const fetchProject = project => dispatch => {
     })
     .catch(err => console.log(err));
 };
+
+export const setProject = (project, nav) => dispatch => {
+  dispatch({type: 'SET_PROJECT', payload: project});
+  nav.history.push(`/${project.projectName}`);
+};

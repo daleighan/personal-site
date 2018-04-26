@@ -24,6 +24,11 @@ const projectReducer = (state = initialState, action) => {
         projects: action.payload.Items,
         currentProject: nextProject,
       };
+    case 'SET_PROJECT':
+      return {
+        ...state,
+        currentProject: action.payload,
+      };
     default:
       return state;
   }

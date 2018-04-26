@@ -1,18 +1,20 @@
 import React from 'react';
 import {Card, Button, CardTitle, CardImg, CardBody} from 'reactstrap';
 
-const ProjectsEntry = ({project}) => {
-  console.log(project);
+const ProjectsEntry = ({project, setProject, nav}) => {
+  const {projectName, pictures, blurb} = project;
   return (
     <Card>
-      <CardTitle>{project.projectName}</CardTitle>
-      <CardImg
-        width="100%"
-        src={project.pictures[0].src}
-        alt={project.projectName}
-      />
-      <CardBody>{project.blurb}</CardBody>
-      <Button className="btn-projects" color="info" size="sm">Learn More</Button>
+      <CardTitle>{projectName}</CardTitle>
+      <CardImg width="100%" src={pictures[0].src} alt={projectName} />
+      <CardBody>{blurb}</CardBody>
+      <Button
+        onClick={() => setProject(project, nav)}
+        className="btn-projects"
+        color="info"
+        size="sm">
+        Learn More
+      </Button>
     </Card>
   );
 };
