@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
-import {initialFetch} from '../../store/actions/projectActions';
+import {fetchProject} from '../../store/actions/projectActions';
 
 class Project extends Component {
   constructor(props) {
@@ -9,9 +9,10 @@ class Project extends Component {
   }
   
   componentDidMount() {
-    const {projectsFetched, initialFetch} = this.props;
+    const {id} = this.props.nav.match.params;
+    const {projectsFetched, fetchProject} = this.props;
     if (!projectsFetched) {
-      initialFetch();
+      fetchProject(id);
     }
   }
 
@@ -38,7 +39,7 @@ const mapStateToProps = ({projectReducer}) => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    initialFetch: bindActionCreators(initialFetch, dispatch),
+    fetchProject: bindActionCreators(fetchProject, dispatch),
   };
 };
 
