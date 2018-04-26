@@ -1,7 +1,9 @@
 import React, {Component} from 'react';
+import ProjectsEntry from './ProjectsEntry';
 import {initialFetch} from '../../store/actions/projectActions';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
+import '../../scss/projectsStyles.scss';
 
 class Projects extends Component {
   constructor(props) {
@@ -16,13 +18,17 @@ class Projects extends Component {
   }
 
   render = () => {
-    const {projectsFetched} = this.props;
+    const {projectsFetched, projects} = this.props;
     return (
       <div>
         {!projectsFetched ? (
           <div>Projects Not Fetched</div>
         ) : (
-          <div>Projects Fetched</div>
+          <div>
+            {projects.map(project => (
+              <ProjectsEntry project={project} key={project.projectName} />
+            ))}
+          </div>
         )}
       </div>
     );
