@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {initialFetch} from '../../store/actions/projectActions';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
-import {Jumbotron} from 'reactstrap';
+import {Jumbotron, Button} from 'reactstrap';
 import Typist from 'react-typist';
 import '../../scss/homeStyles.scss';
 import '../../node_modules/react-typist/dist/typist.css';
@@ -36,6 +36,7 @@ class Home extends Component {
               more about me, my work and my philosophy.
             </div>
           </div>
+          <Button className="info-button" color="info">Learn More</Button>
         </Jumbotron>
       </div>
     );
