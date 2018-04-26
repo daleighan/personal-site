@@ -10,7 +10,7 @@
 .center-jumbotron {
   margin: 0 3em;
   color: $danger;
-  background-color: $primary!important;
+  background-color: $primary !important;
 }
 
 .welcome {
@@ -19,16 +19,16 @@
 
 .subtitle {
   visibility: hidden;
-  -webkit-animation: 1.5s ease 3.2s normal forwards 1 fadein;
-  animation: 1.5s ease 3.2s normal forwards 1 fadein;
+  -webkit-animation: 1.5s ease 3.8s normal forwards 1 fadein;
+  animation: 1.5s ease 3.8s normal forwards 1 fadein;
 }
 
 @keyframes fadein {
-  0% { 
+  0% {
     visibility: visible;
-    opacity: 0; 
+    opacity: 0;
   }
-  100% { 
+  100% {
     opacity: 1;
     visibility: visible;
   }
@@ -37,25 +37,25 @@
 @-webkit-keyframes fadein {
   0% {
     visibility: visible;
-    opacity: 0; 
+    opacity: 0;
   }
-  100% { 
-    opacity: 1; 
+  100% {
+    opacity: 1;
     visibility: visible;
   }
 }
 
-@media(max-width: 480px) {
+@media (max-width: 480px) {
   .center-jumbotron {
     margin: 0;
     min-height: 20em;
   }
 }
 
-@media(max-width: 824px) and (orientation: landscape) {
+@media (max-width: 824px) and (orientation: landscape) {
   .center-jumbotron {
     min-height: 79vh;
-    margin: 0!important;
-    padding: 2em!important;
+    margin: 0 !important;
+    padding: 2em !important;
   }
 }

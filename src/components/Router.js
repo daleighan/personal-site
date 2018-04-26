@@ -28,7 +28,7 @@ const routes = [
 
 const Router = () => {
   const currentKey = location.pathname.split('/')[1] || '/';
-  const timeout = {enter: 700, exit: 700};
+  const timeout = {enter: 600, exit: 500};
   return (
     <div className="router">
       <TransitionGroup component="main">
@@ -36,6 +36,7 @@ const Router = () => {
           key={currentKey}
           timeout={timeout}
           classNames="fade"
+          unmountOnExit
           appear>
           <Switch>
             {routes.map((route, i) => {
