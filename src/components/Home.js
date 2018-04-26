@@ -26,7 +26,7 @@ class Home extends Component {
         <Jumbotron className="center-jumbotron">
           <h1 className="welcome">
             <Typist className="welcome-head" speed={45} startDelay={1500}>
-              Welcome to my portfolio!
+              Welcome to my portfolio page!
             </Typist>
           </h1>
           <div className="subtitle">

@@ -1,14 +1,14 @@
 @import 'variables';
 
 .outer {
-  height: 80vh;
+  min-height: 72vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .center-jumbotron {
-  margin: 0 1em;
+  margin: 0 3em;
   color: $danger;
   background-color: $primary!important;
 }
@@ -42,5 +42,19 @@
   100% { 
     opacity: 1; 
     visibility: visible;
+  }
+}
+
+@media(max-width: 480px) {
+  .center-jumbotron {
+    margin: 0;
+  }
+}
+
+@media(max-width: 824px) and (orientation: landscape) {
+  .center-jumbotron {
+    min-height: 72vh;
+    margin: 0!important;
+    padding: 2em!important;
   }
 }
