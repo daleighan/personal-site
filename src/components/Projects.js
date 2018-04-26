@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import ProjectsEntry from './ProjectsEntry';
+import {CardGroup} from 'reactstrap';
 import {initialFetch} from '../../store/actions/projectActions';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
@@ -24,11 +25,11 @@ class Projects extends Component {
         {!projectsFetched ? (
           <div>Projects Not Fetched</div>
         ) : (
-          <div>
+          <CardGroup>
             {projects.map(project => (
               <ProjectsEntry project={project} key={project.projectName} />
             ))}
-          </div>
+          </CardGroup>
         )}
       </div>
     );
