@@ -5,15 +5,16 @@
   font-size: 1.37em;
 }
 
+.custom-header {
+  z-index: 999;
+}
+
 @media(max-width: 360px) {
   .nav-link {
-    font-size: 1em;
+    font-size: 1.2em;
   }
   .welcome-head {
     font-size: 0.9em;
-  }
-  .center-jumbotron {
-    height: 65%;
   }
 }
 

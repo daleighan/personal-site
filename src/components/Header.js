@@ -5,7 +5,7 @@ import {LinkContainer} from 'react-router-bootstrap';
 import '../../scss/headerStyles.scss';
 
 const Header = () => (
-  <Navbar color="dark" light>
+  <Navbar className="custom-header" color="dark" light>
     <NavLink tag={Link} to="/">
       Alex Leigh: Full Stack Developer
     </NavLink>
