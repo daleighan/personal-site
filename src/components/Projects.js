@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import ProjectsEntry from './ProjectsEntry';
-import {CardGroup} from 'reactstrap';
+import {Container, CardGroup} from 'reactstrap';
 import {initialFetch, setProject} from '../../store/actions/projectActions';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
@@ -22,6 +22,7 @@ class Projects extends Component {
     const {projectsFetched, projects, setProject, nav} = this.props;
     return (
       <div className="projects-body">
+        <h2 className="projects-header">Here are some of my most recent projects:</h2>
         {!projectsFetched ? (
           <div>Projects Not Fetched</div>
         ) : (

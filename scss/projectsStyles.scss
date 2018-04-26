@@ -1,11 +1,18 @@
 @import 'variables';
 
+.projects-header {
+  font-family: 'Roboto', sans-serif;
+  margin-top: 1em;
+  text-align: center;
+  color: $secondary;
+}
+
 .projects-body {
-  height: 80vh;
+  height: 90vh;
 }
 
 .card-group {
-  margin: 3em 0em 6em 0em;
+  margin: 1.5em 0em 7em 0em;
 }
 
 .card {
@@ -13,14 +20,18 @@
   transform: translateZ(0);
   margin: 0 0.3em;
   text-align: center;
-  border-radius: 0.3rem!important;
+  border-radius: 0.3rem !important;
 }
 
 .card-title {
   font-family: 'Shadows Into Light', cursive;
   margin-top: 0.7em;
   color: $secondary;
-  font-size: 1.5em;
+  font-size: 1.8em;
+}
+
+.card-img {
+  border-radius: 0 !important;
 }
 
 .card-body {
@@ -39,7 +50,7 @@
 
 @media (min-width: 840px) {
   .card-group {
-    margin: 3em 10em;
+    margin: 3em 7em 7em 7em;
   }
   .card {
     margin: 0 1em;
