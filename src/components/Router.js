@@ -28,9 +28,7 @@ const routes = [
 
 const Router = () => {
   const currentKey = location.pathname.split('/')[1] || '/';
-  const timeout = {enter: 300, exit: 200};
-  console.log(location, 'location');
-  console.log(currentKey, 'current key');
+  const timeout = {enter: 500, exit: 500};
   return (
     <div className="router">
       <TransitionGroup component="main">

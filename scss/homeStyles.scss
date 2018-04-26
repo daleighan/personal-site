@@ -1,7 +1,7 @@
 @import 'variables';
 
 .outer {
-  height: 100%;
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11,27 +11,6 @@
   margin: 0 1em;
   color: $danger;
   background-color: $primary!important;
-  position: relative;
-  -webkit-animation: 1s ease-out 0s normal forwards 1 slidein;
-  animation: 1s ease-out 0s normal forwards 1 slidein;
-}
-
-@keyframes slidein {
-  0% {
-    left: -200%;
-  }
-  100% {
-    left: 0%;
-  }
-}
-
-@-webkit-keyframes slidein {
-  0% {
-    left: -200%;
-  }
-  100% {
-    left: 0%;
-  }
 }
 
 .welcome {
