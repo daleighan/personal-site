@@ -20,7 +20,7 @@ class Home extends Component {
   }
 
   render = () => {
-    const {projectsFetched} = this.props;
+    const {projectsFetched, nav} = this.props;
     return (
       <div className="container outer">
         <Jumbotron className="center-jumbotron">
@@ -36,7 +36,7 @@ class Home extends Component {
               more about me, my work and my philosophy.
             </div>
           </div>
-          <Button className="info-button" color="info">Learn More</Button>
+          <Button onClick={() => nav.history.push('/about')} className="info-button" color="info">Learn More</Button>
         </Jumbotron>
       </div>
     );

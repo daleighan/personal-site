@@ -19,7 +19,7 @@ class Project extends Component {
   componentDidUpdate() {
     const {projectsFetched, currentProject, nav} = this.props;
     if (projectsFetched && !currentProject) {
-      nav.history.push('/projects');
+      nav.history.push('/');
     }
   }
 
