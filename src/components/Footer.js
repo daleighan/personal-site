@@ -32,7 +32,7 @@ const footerItems = [
 const Footer = () => (
   <div className="footer">
     {footerItems.map(item => (
-      <span className="icon-holder">
+      <span key={item.id} className="icon-holder">
         <a href={item.ref} id={item.id}>
           <img className="footer-icon" src={item.src} />
         </a>
