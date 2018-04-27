@@ -9,7 +9,7 @@
 .fade-enter-active {
   opacity: 1;
   transform: translate3d(0, 0, 0);
-  transition: transform 0.8s ease-in, opacity 0.6s;
+  transition: transform 0.6s ease-in, opacity 0.6s;
 }
 
 .fade-exit {

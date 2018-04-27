@@ -44,7 +44,7 @@ const Router = () => {
         <TransitionGroup>
           <CSSTransition
             key={location.key}
-            timeout={400}
+            timeout={600}
             classNames="fade"
             unmountOnExit
             appear>
