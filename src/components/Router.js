@@ -41,6 +41,7 @@ const Router = () => {
   const currentKey = location.pathname.split('/')[1] || '/';
   const timeout = {enter: 600, exit: 500};
   return (
+    <Route render={({location}) => (
     <TransitionGroup component="main">
       <CSSTransition
         key={currentKey}
@@ -48,7 +49,7 @@ const Router = () => {
         classNames="fade"
         unmountOnExit
         appear>
-        <Switch>
+        <Switch location={location}>
           {routes.map((route, i) => {
             const {exact, path, Component} = route;
             return (
@@ -62,7 +63,7 @@ const Router = () => {
           })}
         </Switch>
       </CSSTransition>
-    </TransitionGroup>
+  </TransitionGroup>)}/>
   );
 };
 

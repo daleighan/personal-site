@@ -5,8 +5,8 @@
 }
 
 .project-holder {
-  margin-top: 2em;
-  background-color: $primary; 
+  height: 90vh !important;
+  background-color: $primary;
   padding: 0.5em !important;
   border-radius: 0.3rem !important;
 }
@@ -19,11 +19,35 @@
 .display-3 {
   font-family: 'Shadows Into Light', cursive;
   color: $secondary;
-  margin: 0 1em;
+}
+
+.link-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.link-holder {
+  margin: 0.5em 1em;
 }
 
 .project-link {
-  color: white;
+  color: $warning;
+  font-family: 'Roboto', sans-serif;
 }
 
+.project-link:hover {
+  text-decoration: none;
+}
+
+.link-icon {
+  width: 25px;
+  height: 25px;
+}
 //font-family: 'Roboto', sans-serif;
+
+@media (min-width: 800px) {
+  .display-3 {
+    margin: 0 1em;
+  }
+}

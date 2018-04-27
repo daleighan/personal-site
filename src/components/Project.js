@@ -42,14 +42,24 @@ class Project extends Component {
             </div>
             <h2 className="display-3">{currentProject.projectName}</h2>
             <hr className="my-2" />
-            <Button color="info">
-              <a
-                className="project-link"
-                href={currentProject.projectUrl}
-                color="secondary">
-                Found Here
-              </a>
-            </Button>
+            <div className="link-box">
+              {currentProject.projectUrl ? (
+                <span className="link-holder">
+                  <a className="project-link" href={currentProject.projectUrl}>
+                    <img className="link-icon" src="link-symbol-black.png" />
+                    {'     '}See The App
+                  </a>
+                </span>
+              ) : null}
+              {currentProject.githubUrl ? (
+                <span className="link-holder">
+                  <a className="project-link" href={currentProject.githubUrl}>
+                    <img className="link-icon" src="github-box-black.png" />
+                    {'     '}See The Code
+                  </a>
+                </span>
+              ) : null}
+            </div>
           </Container>
         )}
       </div>
