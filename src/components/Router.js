@@ -38,32 +38,33 @@ const routes = [
 ];
 
 const Router = () => {
-  const currentKey = location.pathname.split('/')[1] || '/';
-  const timeout = {enter: 600, exit: 500};
   return (
-    <Route render={({location}) => (
-    <TransitionGroup component="main">
-      <CSSTransition
-        key={currentKey}
-        timeout={timeout}
-        classNames="fade"
-        unmountOnExit
-        appear>
-        <Switch location={location}>
-          {routes.map((route, i) => {
-            const {exact, path, Component} = route;
-            return (
-              <Route
-                exact={exact}
-                path={path}
-                render={(props) => <Component nav={props} />}
-                key={i}
-              />
-            );
-          })}
-        </Switch>
-      </CSSTransition>
-  </TransitionGroup>)}/>
+    <Route
+      render={({location}) => (
+        <TransitionGroup>
+          <CSSTransition
+            key={location.key}
+            timeout={500}
+            classNames="fade"
+            unmountOnExit
+            appear>
+            <Switch location={location}>
+              {routes.map((route, i) => {
+                const {exact, path, Component} = route;
+                return (
+                  <Route
+                    exact={exact}
+                    path={path}
+                    render={props => <Component nav={props} />}
+                    key={i}
+                  />
+                );
+              })}
+            </Switch>
+          </CSSTransition>
+        </TransitionGroup>
+      )}
+    />
   );
 };
 
