@@ -1,11 +1,12 @@
 @import 'variables';
 
+.project-center {
+  margin: 0 1em;
+}
+
 .project-holder {
   margin-top: 2em;
   background-color: $primary; 
-}
-
-.container {
   padding: 0.5em !important;
   border-radius: 0.3rem !important;
 }
@@ -14,3 +15,15 @@
   display: flex;
   justify-content: flex-end;
 }
+
+.display-3 {
+  font-family: 'Shadows Into Light', cursive;
+  color: $secondary;
+  margin: 0 1em;
+}
+
+.project-link {
+  color: white;
+}
+
+//font-family: 'Roboto', sans-serif;

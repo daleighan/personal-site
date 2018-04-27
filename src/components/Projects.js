@@ -22,7 +22,7 @@ class Projects extends Component {
   render = () => {
     const {projectsFetched, projects, setProject, nav} = this.props;
     return (
-      <div className="projects-body">
+      <Container className="projects-body">
         <h2 className="projects-header">
             Here are some of my most recent projects:
         </h2>
@@ -40,7 +40,7 @@ class Projects extends Component {
             ))}
           </CardGroup>
         )}
-      </div>
+      </Container>
     );
   };
 }

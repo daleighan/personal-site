@@ -28,17 +28,28 @@ class Project extends Component {
   render = () => {
     const {nav, projectsFetched, projects, currentProject} = this.props;
     return (
-      <div>
+      <div className="project-center">
         {!projectsFetched ? (
           <div>Loading</div>
         ) : (
           <Container className="project-holder">
             <div className="back-button-holder">
-              <Button onClick={() => nav.history.push('/projects')} color="info">
+              <Button
+                onClick={() => nav.history.push('/projects')}
+                color="info">
                 Back
               </Button>
             </div>
-            Empty Project Page
+            <h2 className="display-3">{currentProject.projectName}</h2>
+            <hr className="my-2" />
+            <Button color="info">
+              <a
+                className="project-link"
+                href={currentProject.projectUrl}
+                color="secondary">
+                Found Here
+              </a>
+            </Button>
           </Container>
         )}
       </div>
