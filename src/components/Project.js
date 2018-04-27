@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import {fetchProject} from '../../store/actions/projectActions';
+import {Container, Button} from 'reactstrap';
+import '../../scss/projectStyles.scss';
 
 class Project extends Component {
   constructor(props) {
@@ -24,10 +26,21 @@ class Project extends Component {
   }
 
   render = () => {
-    const {projectsFetched, projects} = this.props;
+    const {nav, projectsFetched, projects, currentProject} = this.props;
     return (
       <div>
-        {!projectsFetched ? <div>Loading</div> : <div>Empty Project Page</div>}
+        {!projectsFetched ? (
+          <div>Loading</div>
+        ) : (
+          <Container className="project-holder">
+            <div className="back-button-holder">
+              <Button onClick={() => nav.history.push('/projects')} color="info">
+                Back
+              </Button>
+            </div>
+            Empty Project Page
+          </Container>
+        )}
       </div>
     );
   };
