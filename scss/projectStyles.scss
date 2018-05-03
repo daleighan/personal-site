@@ -52,8 +52,18 @@
   color: $secondary;
 }
 
-.carousel-item > img {
+.carousel-holder {
+  margin: 0 1em 5em 1em;
+}
+
+.carousel-item {
+  text-align: center;
   width: 100%;
+}
+
+.carousel-item > img {
+  display: inline-block;
+  max-height: 500px;
 }
 
 @media (min-width: 800px) {
