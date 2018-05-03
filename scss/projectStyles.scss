@@ -52,6 +52,10 @@
   color: $secondary;
 }
 
+.carousel-item > img {
+  width: 100%;
+}
+
 @media (min-width: 800px) {
   .display-3 {
     margin: 0 1em;
