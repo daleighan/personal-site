@@ -63,7 +63,17 @@
 
 .carousel-item > img {
   display: inline-block;
-  max-height: 500px;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+
+.carousel-caption > p {
+  font-family: 'Roboto', sans-serif;
+}
+
+.carousel-caption > h3 {
+  display: none;
 }
 
 @media (min-width: 800px) {
@@ -72,5 +82,8 @@
   }
   .description {
     margin: 1em 3em;
+  }
+  .carousel-item > img {
+    max-width: 700px;
   }
 }
