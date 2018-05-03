@@ -27,6 +27,7 @@ class Project extends Component {
 
   render = () => {
     const {nav, projectsFetched, projects, currentProject} = this.props;
+    console.log(this.props);
     return (
       <div className="project-center">
         {!projectsFetched ? (
@@ -59,6 +60,9 @@ class Project extends Component {
                   </a>
                 </span>
               ) : null}
+            </div>
+            <div className="description">
+              {currentProject.description}
             </div>
           </Container>
         )}
