@@ -52,7 +52,7 @@ const contactItems = [
 const Header = ({modalOpen, toggleModal}) => (
   <Navbar className="custom-header" color="dark" light>
     <NavLink tag={Link} to="/">
-      Alex Leigh: Full Stack Developer
+      Alex Leigh: Software Engineer
     </NavLink>
     <Nav>
       <NavItem>

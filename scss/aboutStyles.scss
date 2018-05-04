@@ -2,6 +2,41 @@
 
 .about-container {
   background-color: $primary;
-  min-height: 87vh;
+  min-height: 81vh;
   border-radius: 5px;
+  padding: 1em 2em !important;
+}
+
+.about-title {
+  color: $secondary;
+  font-family: 'Shadows Into Light', cursive;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.img-contain > img {
+  border-radius: 50%;
+}
+
+.about-body {
+  font-family: 'Roboto', sans-serif;
+  color: $warning;
+}
+
+.img-contain {
+  display: flex;
+  justify-content: center;
+}
+
+//font-family: 'Roboto', sans-serif;
+
+@media (min-width: 600px) {
+  .img-contain {
+    display: inline-block;
+    float: left;
+    margin-right: 1em;
+  }
+  .about-title {
+    text-align: left;
+  }
 }
