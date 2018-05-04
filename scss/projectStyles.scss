@@ -128,6 +128,9 @@
 
 @media (max-width: 824px) and (orientation: landscape) {
   .carousel-inner {
-    height: 400px;
+    height: 320px;
+  }
+  .carousel-item > img {
+    height: 300px;
   }
 }
