@@ -42,6 +42,12 @@ class Project extends Component {
             </div>
             <h2 className="display-3">{currentProject.projectName}</h2>
             <hr className="my-2" />
+            <div className="carousel-holder">
+              <UncontrolledCarousel
+                autoPlay={false}
+                items={currentProject.pictures}
+              />
+            </div>
             <div className="link-box">
               {currentProject.projectUrl ? (
                 <span className="link-holder">
@@ -61,12 +67,6 @@ class Project extends Component {
               ) : null}
             </div>
             <div className="description">{currentProject.description}</div>
-            <div className="carousel-holder">
-              <UncontrolledCarousel
-                autoPlay={false}
-                items={currentProject.pictures}
-              />
-            </div>
             <div className="stack-holder">
               <div className="tech-stack">
                 <div className="stack-title">Technologies Used:</div>
