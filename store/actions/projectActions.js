@@ -27,3 +27,7 @@ export const setProject = (project, nav) => dispatch => {
   dispatch({type: 'SET_PROJECT', payload: project});
   nav.history.push(`/${project.projectName}`);
 };
+
+export const toggleModal = () => dispatch => {
+  dispatch({type: 'TOGGLE_MODAL'});
+};

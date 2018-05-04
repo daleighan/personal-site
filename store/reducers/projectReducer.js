@@ -2,6 +2,7 @@ const initialState = {
   projects: [],
   currentProject: null,
   projectsFetched: false,
+  modalOpen: false,
 };
 
 const projectReducer = (state = initialState, action) => {
@@ -28,6 +29,11 @@ const projectReducer = (state = initialState, action) => {
       return {
         ...state,
         currentProject: action.payload,
+      };
+    case 'TOGGLE_MODAL':
+      return {
+        ...state,
+        modalOpen: !state.modalOpen,
       };
     default:
       return state;
