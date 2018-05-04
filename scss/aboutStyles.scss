@@ -28,15 +28,28 @@
   justify-content: center;
 }
 
-//font-family: 'Roboto', sans-serif;
+.technologies {
+  clear: both;
+}
+
+.tech-title {
+  font-size: 1.2em;
+  color: $secondary;
+  font-family: 'Shadows Into Light', cursive;
+  text-decoration: underline;
+}
 
 @media (min-width: 600px) {
   .img-contain {
     display: inline-block;
     float: left;
     margin-right: 1em;
+    margin-bottom: 2em;
   }
   .about-title {
     text-align: left;
+  }
+  .about-body {
+    margin-top: 2em;
   }
 }

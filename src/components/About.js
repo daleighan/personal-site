@@ -9,8 +9,23 @@ const About = () => (
       <img src="me.jpg" />
     </div>
     <div className="about-body">
-      Hello, and welcome to my website! If you are here, I am guessing you would
-      like to know more about me and my work.
+      Hello, and welcome to my website! If you have made it here, I am guessing
+      you would like to know a bit more about me and my work.
+      <div className="technologies">
+        <div className="tech-title">Preferred Technologies:</div>
+        <div>Languages: JavaScript, Python</div>
+        <div>Front-End: React, Redux, HTML, CSS, SCSS, Webpack, Next.js</div>
+        <div>
+          Back-End: Node.js, Express, Flask, ReST, Sequelize, Express Session,
+          JWTs
+        </div>
+        <div>Databases: SQL, PostgreSQL, DynamoDB</div>
+        <div>Mobile: React Native</div>
+        <div>Version Control: Git</div>
+        <div>AWS: EC2, Lambda, RDS, Cognito</div>
+        <div>Testing: Mocha, Chai</div>
+        <div>Other: Agile Methodology, Docker, Socket.io</div>
+      </div>
     </div>
   </Container>
 );
