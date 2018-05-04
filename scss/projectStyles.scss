@@ -63,6 +63,10 @@
   height: 200px;
 }
 
+.carousel-item > img {
+  background-color: $ml-sandbox;
+}
+
 .carousel-item {
   text-align: center;
   width: 100%;
@@ -76,8 +80,12 @@
 }
 
 .carousel-caption > p {
+  background-color: white;
+  padding: 0.3em;
+  border-radius: 10px;
+  opacity: 0.8;
   font-family: 'Roboto', sans-serif;
-  color: $warning;
+  color: $secondary;
 }
 
 .carousel-caption > h3 {

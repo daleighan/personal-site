@@ -32,6 +32,10 @@
   border-radius: 0.3rem !important;
 }
 
+.card > img {
+  background-color: $ml-sandbox;
+}
+
 .card-title {
   font-family: 'Shadows Into Light', cursive;
   margin-top: 0.7em;
