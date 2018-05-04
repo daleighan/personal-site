@@ -47,6 +47,7 @@
 
 .description {
   margin: 1em;
+  text-indent: 20px;
   text-align: center;
   font-family: 'Roboto', sans-serif;
   color: $secondary;
@@ -115,12 +116,14 @@
   font-size: 0.85em;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 824px) {
   .display-3 {
     margin: 0 1em;
   }
   .description {
     margin: 1em 3em;
+    text-align: left;
+    text-indent: 40px;
   }
   .carousel-inner {
     height: 500px;
@@ -133,5 +136,8 @@
   }
   .carousel-item > img {
     height: 300px;
+  }
+  .description {
+    margin: 1em 3em;
   }
 }
