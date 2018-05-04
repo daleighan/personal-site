@@ -5,7 +5,6 @@ import {connect} from 'react-redux';
 import Home from './Home';
 import About from './About';
 import Projects from './Projects';
-import Contact from './Contact';
 import Project from './Project';
 import '../../scss/routerStyles.scss';
 
@@ -24,11 +23,6 @@ const routes = [
     path: '/projects',
     exact: true,
     Component: Projects,
-  },
-  {
-    path: '/contact',
-    exact: true,
-    Component: Contact,
   },
   {
     path: '/:id',

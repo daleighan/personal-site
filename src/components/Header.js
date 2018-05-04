@@ -75,11 +75,10 @@ const Header = ({modalOpen, toggleModal}) => (
             <ModalHeader>Ways To Contact Me:</ModalHeader>
             <ModalBody>
               {contactItems.map(item => (
-                <div key={item.id}>
+                <div className="modal-entry" key={item.id}>
                   <a href={item.ref} id={item.id}>
                     <img className="footer-icon" src={item.src} />
-                    <span className="modal-item">{item.name}:</span>
-                    <div className="modal-txt">{item.txt}</div>
+                    <span className="modal-txt">{item.txt}</span>
                   </a>
                 </div>
               ))}

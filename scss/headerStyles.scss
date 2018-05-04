@@ -17,13 +17,15 @@
   color: #e1c87c;
 }
 
-.modal-content, .modal-body {
+.modal-content,
+.modal-body {
   background-color: $primary !important;
   color: $warning;
   font-family: 'Roboto', sans-serif;
 }
 
-.modal-item, .modal-txt {
+.modal-item,
+.modal-txt {
   color: $secondary;
 }
 
@@ -31,7 +33,8 @@
   margin-left: 0.5em;
 }
 
-.modal-item:hover, .modal-txt:hover {
+.modal-item:hover,
+.modal-txt:hover {
   color: $ml-sandbox;
 }
 
@@ -39,11 +42,12 @@ a:hover {
   text-decoration: none !important;
 }
 
-@media (min-width: 800px) {
-  .modal-txt {
-    display: inline;
-    margin-left: 1em;
-  }
+.modal-entry {
+  margin: 0.5em 0;
+}
+
+.modal-txt {
+  margin-left: 1em;
 }
 
 @media (max-width: 360px) {
