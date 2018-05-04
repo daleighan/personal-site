@@ -27,9 +27,6 @@ class Project extends Component {
 
   render = () => {
     const {nav, projectsFetched, projects, currentProject} = this.props;
-    if (currentProject) {
-      console.log(currentProject.pictures);
-    }
     return (
       <div className="project-center">
         {!projectsFetched ? (

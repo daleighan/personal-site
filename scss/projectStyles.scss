@@ -56,6 +56,10 @@
   margin: 0 1em 5em 1em;
 }
 
+.carousel-inner {
+  height: 240px;
+}
+
 .carousel-item {
   text-align: center;
   width: 100%;
@@ -84,6 +88,15 @@
     margin: 1em 3em;
   }
   .carousel-item > img {
-    max-width: 700px;
+    max-width: 60%;
+  }
+  .carousel-inner {
+    height: 500px;
+  }
+}
+
+@media (max-width: 824px) and (orientation: landscape) {
+  .carousel-inner {
+    height: 350px;
   }
 }
