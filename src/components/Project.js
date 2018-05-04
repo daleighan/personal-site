@@ -62,7 +62,18 @@ class Project extends Component {
             </div>
             <div className="description">{currentProject.description}</div>
             <div className="carousel-holder">
-              <UncontrolledCarousel items={currentProject.pictures} />
+              <UncontrolledCarousel
+                autoPlay={false}
+                items={currentProject.pictures}
+              />
+            </div>
+            <div className="stack-holder">
+              <div className="tech-stack">
+                <div className="stack-title">Technologies Used:</div>
+                {currentProject.techStack
+                  .split('\n')
+                  .map(line => <div>{line}</div>)}
+              </div>
             </div>
           </Container>
         )}

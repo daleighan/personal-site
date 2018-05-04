@@ -53,7 +53,7 @@
 }
 
 .carousel-holder {
-  margin: 0 1em 5em 1em;
+  margin: 1em;
 }
 
 .carousel-inner {
@@ -74,10 +74,30 @@
 
 .carousel-caption > p {
   font-family: 'Roboto', sans-serif;
+  color: $secondary;
 }
 
 .carousel-caption > h3 {
   display: none;
+}
+
+.stack-holder {
+  display: flex;
+  justify-content: center;
+}
+
+.stack-title {
+  font-size: 1.3em;
+  font-family: 'Shadows Into Light', cursive;
+  text-decoration: underline;
+  color: $secondary;
+}
+
+.tech-stack {
+  color: $warning;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 4em;
+  font-size: 0.85em;
 }
 
 @media (min-width: 800px) {
@@ -87,9 +107,6 @@
   .description {
     margin: 1em 3em;
   }
-  .carousel-item > img {
-    max-width: 60%;
-  }
   .carousel-inner {
     height: 500px;
   }
@@ -97,6 +114,6 @@
 
 @media (max-width: 824px) and (orientation: landscape) {
   .carousel-inner {
-    height: 350px;
+    height: 314px;
   }
 }
