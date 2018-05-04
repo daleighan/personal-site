@@ -43,11 +43,19 @@ a:hover {
 }
 
 .modal-entry {
-  margin: 0.5em 0;
+  margin: 0.4em 0;
 }
 
 .modal-txt {
   margin-left: 1em;
+}
+
+.modal-content > h3 {
+  margin: 0.5em 0 0 0.5em;
+}
+
+.modal-body {
+  margin-bottom: 2em;
 }
 
 @media (max-width: 360px) {
@@ -65,5 +73,12 @@ a:hover {
   }
   .welcome-head {
     font-size: 0.9em;
+  }
+}
+
+@media (max-width: 824px) and (orientation: landscape) {
+  .modal-content > .info-button {
+    bottom: 0.5em;
+    right: 0.5em;
   }
 }

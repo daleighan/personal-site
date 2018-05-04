@@ -31,7 +31,6 @@ const contactItems = [
     txt: 'daleighan@gmail.com',
     id: 'emailTooltip',
     src: 'email-black.png',
-    text: 'Email Me',
     name: 'E-mail',
   },
   {
@@ -39,7 +38,6 @@ const contactItems = [
     txt: 'github.com/daleighan',
     id: 'githubTooltip',
     src: 'github-box-black.png',
-    text: 'My GitHub',
     name: 'GitHub',
   },
   {
@@ -47,7 +45,6 @@ const contactItems = [
     txt: 'linkedin.com/in/alexander-leigh',
     id: 'linkedinTooltip',
     src: 'linkedin-box-black.png',
-    text: 'My LinkedIn',
     name: 'LinkedIn',
   },
 ];
@@ -72,7 +69,7 @@ const Header = ({modalOpen, toggleModal}) => (
         <NavLink className="nav-link" onClick={toggleModal}>
           <span className="contact-btn">Get In Touch!</span>
           <Modal isOpen={modalOpen} toggle={toggleModal}>
-            <ModalHeader>Ways To Contact Me:</ModalHeader>
+            <h3>Ways To Contact Me:</h3>
             <ModalBody>
               {contactItems.map(item => (
                 <div className="modal-entry" key={item.id}>
@@ -83,7 +80,7 @@ const Header = ({modalOpen, toggleModal}) => (
                 </div>
               ))}
             </ModalBody>
-            <Button color="info" onClick={toggleModal}>
+            <Button className="info-button" color="info" onClick={toggleModal}>
               Close
             </Button>
           </Modal>
