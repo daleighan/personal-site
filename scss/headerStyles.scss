@@ -17,6 +17,35 @@
   color: #e1c87c;
 }
 
+.modal-content, .modal-body {
+  background-color: $primary !important;
+  color: $warning;
+  font-family: 'Roboto', sans-serif;
+}
+
+.modal-item, .modal-txt {
+  color: $secondary;
+}
+
+.modal-item {
+  margin-left: 0.5em;
+}
+
+.modal-item:hover, .modal-txt:hover {
+  color: $ml-sandbox;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+@media (min-width: 800px) {
+  .modal-txt {
+    display: inline;
+    margin-left: 1em;
+  }
+}
+
 @media (max-width: 360px) {
   .nav-link {
     font-size: 1.2em;
