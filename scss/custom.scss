@@ -3,13 +3,16 @@
 html {
   height: 100%;
 }
+
 body {
   position: relative;
   min-height: 100%;
-  font-family: 'Shadows Into Light', cursive;
+  font-family: $body-font;
   user-select: none;
 }
+
 #app {
   min-height: 100%;
 }
+
 @import 'node_modules/bootstrap/scss/bootstrap';
