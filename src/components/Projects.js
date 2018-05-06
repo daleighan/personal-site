@@ -24,7 +24,7 @@ class Projects extends Component {
     return (
       <Container className="projects-body">
         <h2 className="projects-header">
-            Here are some of my most recent projects:
+            Here are some of my most recent projects
         </h2>
         {!projectsFetched ? (
           <div>Projects Not Fetched</div>

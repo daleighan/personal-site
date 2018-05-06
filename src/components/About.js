@@ -2,9 +2,15 @@ import React from 'react';
 import {Container, Button} from 'reactstrap';
 import '../../scss/aboutStyles.scss';
 
-const About = () => (
+const About = ({nav}) => (
   <Container className="about-container">
-    <h1 className="about-title">More About Me:</h1>
+    <div className="back-button-holder">
+      <Button onClick={() => nav.history.push('/')} color="info">
+        Back
+      </Button>
+    </div>
+    <h2 className="display-3">About Me</h2>
+    <hr className="my-2" />
     <div className="img-contain">
       <img src="me.jpg" />
     </div>
