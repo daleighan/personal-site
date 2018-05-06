@@ -85,7 +85,7 @@
 }
 
 .carousel-caption > p {
-  background-color: #FDFDFD;
+  background-color: #fdfdfd;
   padding: 0.3em;
   border-radius: 2px;
   opacity: 0.8;
@@ -94,6 +94,7 @@
   -webkit-box-shadow: 3px 3px 2px -2px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 3px 3px 2px -2px rgba(0, 0, 0, 0.75);
   box-shadow: 3px 3px 2px -2px rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
 }
 
 .carousel-caption > h3 {
@@ -117,6 +118,14 @@
   font-family: $body-font;
   margin-bottom: 4em;
   font-size: 0.85em;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  filter: invert(25%);
+}
+
+.carousel-control-next-icon:hover, .carousel-control-prev-icon:hover {
+  filter: invert(15%);
 }
 
 @media (min-width: 824px) {
