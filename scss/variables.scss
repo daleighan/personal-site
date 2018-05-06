@@ -15,3 +15,24 @@ $body-font: 'Roboto', sans-serif;
 
 $body-bg: #8fc1e3; /* light blue */
 
+@keyframes fadein {
+  0% {
+    visibility: visible;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@-webkit-keyframes fadein {
+  0% {
+    visibility: visible;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}

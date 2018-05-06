@@ -3,8 +3,12 @@
 .about-container {
   background-color: $primary;
   min-height: 81vh;
-  border-radius: 5px;
   padding: 1em 2em !important;
+  -webkit-box-shadow: 7px 6px 11px -2px rgba(49, 112, 142, 1);
+  -moz-box-shadow: 7px 6px 11px -2px rgba(49, 112, 142, 1);
+  box-shadow: 7px 6px 11px -2px rgba(49, 112, 142, 1);
+  -webkit-animation: 2s ease 0s normal forwards 1 fadein;
+  animation: 2s ease 0s normal forwards 1 fadein;
 }
 
 .about-title {
@@ -16,6 +20,8 @@
 
 .img-contain > img {
   border-radius: 50%;
+  width: 260px;
+  height: 260px;
 }
 
 .about-body {
@@ -38,7 +44,6 @@
   font-size: 1.2em;
   color: $secondary;
   font-family: $title-font;
-  text-decoration: underline;
 }
 
 @media (min-width: 600px) {

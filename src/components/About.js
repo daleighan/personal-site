@@ -19,6 +19,7 @@ const About = ({nav}) => (
       you would like to know a bit more about me and my work.
       <div className="technologies">
         <div className="tech-title">Preferred Technologies:</div>
+        <hr className="my-2" />
         <div>Languages: JavaScript, Python</div>
         <div>Front-End: React, Redux, HTML, CSS, SCSS, Webpack, Next.js</div>
         <div>

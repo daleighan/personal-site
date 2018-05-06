@@ -29,28 +29,6 @@
   animation: 1.5s ease 2.3s normal forwards 1 fadein;
 }
 
-@keyframes fadein {
-  0% {
-    visibility: visible;
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    visibility: visible;
-  }
-}
-
-@-webkit-keyframes fadein {
-  0% {
-    visibility: visible;
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    visibility: visible;
-  }
-}
-
 .info-button {
   position: fixed;
   bottom: 1em;

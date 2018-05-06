@@ -70,6 +70,7 @@ class Project extends Component {
             <div className="stack-holder">
               <div className="tech-stack">
                 <div className="stack-title">Technologies Used:</div>
+                <hr className="my-2" />
                 {currentProject.techStack
                   .split('\n')
                   .map(line => <div>{line}</div>)}

@@ -67,9 +67,9 @@ const Header = ({modalOpen, toggleModal}) => (
       </NavItem>
       <NavItem>
         <NavLink className="nav-link" onClick={toggleModal}>
-          <span className="contact-btn">Get In Touch!</span>
+          <span className="contact-btn">Get In Touch</span>
           <Modal isOpen={modalOpen} toggle={toggleModal}>
-            <h3>Ways To Contact Me:</h3>
+            <h3>Ways To Reach Me:</h3>
             <ModalBody>
               {contactItems.map(item => (
                 <div className="modal-entry" key={item.id}>

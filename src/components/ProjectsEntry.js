@@ -15,6 +15,7 @@ const ProjectsEntry = ({project, setProject, nav}) => {
   return (
     <Card>
       <CardTitle>{projectName}</CardTitle>
+      <hr className="my-2" />
       <CardImg width="100%" src={pictures[0].src} alt={projectName} />
       <CardBody>{blurb}</CardBody>
       <Button
