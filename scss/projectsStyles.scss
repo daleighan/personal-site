@@ -1,7 +1,7 @@
 @import 'variables';
 
 .projects-header {
-  font-family: 'Roboto', sans-serif;
+  font-family: $body-font;
   margin-top: 1em;
   text-align: center;
   color: $secondary;
@@ -37,7 +37,7 @@
 }
 
 .card-title {
-  font-family: 'Shadows Into Light', cursive;
+  font-family: $title-font;
   margin-top: 0.7em;
   color: $secondary;
   font-size: 1.8em;
@@ -48,7 +48,7 @@
 }
 
 .card-body {
-  font-family: 'Roboto', sans-serif;
+  font-family: $body-font;
   color: $danger;
   margin-bottom: 3em;
 }

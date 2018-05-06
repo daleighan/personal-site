@@ -17,7 +17,7 @@
 }
 
 .display-3 {
-  font-family: 'Shadows Into Light', cursive;
+  font-family: $title-font;
   color: $secondary;
 }
 
@@ -33,7 +33,7 @@
 
 .project-link {
   color: $warning;
-  font-family: 'Roboto', sans-serif;
+  font-family: $body-font;
 }
 
 .project-link:hover {
@@ -49,7 +49,7 @@
   margin: 1em;
   text-indent: 20px;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: $body-font;
   color: $secondary;
 }
 
@@ -85,7 +85,7 @@
   padding: 0.3em;
   border-radius: 6px;
   opacity: 0.8;
-  font-family: 'Roboto', sans-serif;
+  font-family: $body-font;
   color: $secondary;
   -webkit-box-shadow: 3px 3px 2px -2px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 3px 3px 2px -2px rgba(0, 0, 0, 0.75);
@@ -103,7 +103,7 @@
 
 .stack-title {
   font-size: 1.3em;
-  font-family: 'Shadows Into Light', cursive;
+  font-family: $title-font;
   text-decoration: underline;
   color: $secondary;
   text-align: center;
@@ -111,7 +111,7 @@
 
 .tech-stack {
   color: $warning;
-  font-family: 'Roboto', sans-serif;
+  font-family: $body-font;
   margin-bottom: 4em;
   font-size: 0.85em;
 }

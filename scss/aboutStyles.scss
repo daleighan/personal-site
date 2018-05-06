@@ -9,7 +9,7 @@
 
 .about-title {
   color: $secondary;
-  font-family: 'Shadows Into Light', cursive;
+  font-family: $title-font;
   text-decoration: underline;
   text-align: center;
 }
@@ -19,8 +19,9 @@
 }
 
 .about-body {
-  font-family: 'Roboto', sans-serif;
+  font-family: $body-font;
   color: $warning;
+  margin-top: 1em;
 }
 
 .img-contain {
@@ -30,12 +31,13 @@
 
 .technologies {
   clear: both;
+  margin-bottom: 4em;
 }
 
 .tech-title {
   font-size: 1.2em;
   color: $secondary;
-  font-family: 'Shadows Into Light', cursive;
+  font-family: $title-font;
   text-decoration: underline;
 }
 
