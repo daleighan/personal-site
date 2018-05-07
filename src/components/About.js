@@ -15,8 +15,23 @@ const About = ({nav}) => (
       <img src="me.jpg" />
     </div>
     <div className="about-body">
-      Hello, and welcome to my website! If you have made it here, I am guessing
-      you would like to know a bit more about me and my work.
+      <p>
+        Hello, and welcome to my website! If you have made it here, I am
+        guessing you would like to know a bit more about me and my work. I am a
+        full-stack developer who brings a uniquely creative approach to what I
+        do. My background from growing up and in college classical violin which
+        I have now played and studied for over 20 years which has caused me to
+        take an artistic approach to everything that I do. I have also had a
+        love of technology and coding from a young age which started with coding
+        games in Visual Basic and TI-Basic (for graphing calculators) and making
+        simple websites with HTML and CSS when I was 10 and has continued to the
+        present day. Now, my specialty is in web development, with which I take
+        a truly full-stack approach to the work that I do because I really like
+        having a full picture of the projects I work on. I also maintain a deep
+        interest in AI and machine learning as well as with keeping current with
+        the technologies I use. To find out more about what I have been working
+        on recently, please look over to the projects section of this site.
+      </p>
       <div className="technologies">
         <div className="tech-title">Preferred Technologies:</div>
         <hr className="my-2" />

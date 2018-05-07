@@ -34,10 +34,16 @@
   justify-content: center;
 }
 
+.about-body {
+  margin-top: 1em;
+  text-align: center;
+}
+
 .technologies {
   clear: both;
-  margin-bottom: 2em;
+  margin-bottom: 4em;
   font-size: 0.85em;
+  text-align: left;
 }
 
 .tech-title {
@@ -50,7 +56,7 @@
   .img-contain {
     display: inline-block;
     float: left;
-    margin-right: 1em;
+    margin-right: 2em;
     margin-bottom: 2em;
   }
   .about-title {
@@ -58,5 +64,11 @@
   }
   .about-body {
     margin-top: 2em;
+    margin-right: 1.5em;
+    text-indent: 25px;
+    text-align: left;
+  }
+  .technologies {
+    margin-bottom: 2em;
   }
 }
