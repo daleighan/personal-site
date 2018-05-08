@@ -153,3 +153,16 @@
     margin: 1em 3em;
   }
 }
+
+@media (max-width: 380px) {
+  .display-3 {
+    font-size: 3.5em!important;
+  }
+}
+
+@media (max-width: 361px) {
+  .project-link > .link-icon {
+    width: 20px;
+    height: 20px;
+  }
+}
