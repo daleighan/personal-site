@@ -30,7 +30,7 @@ const About = ({nav}) => (
         having a full picture of the projects I work on. I also maintain a deep
         interest in AI and machine learning as well as with keeping current with
         the technologies I use. To find out more about what I have been working
-        on recently, please look over to the projects section of this site.
+        on recently, please look over to the projects section.
       </p>
       <div className="technologies">
         <div className="tech-title">Preferred Technologies:</div>
