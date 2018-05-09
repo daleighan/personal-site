@@ -47,7 +47,7 @@ class Project extends Component {
                 <span className="link-holder">
                   <a className="project-link" href={currentProject.projectUrl}>
                     <img className="link-icon" src="link-symbol-black.png" />
-                    {'     '}See The App
+                    <div>See The App</div>
                   </a>
                 </span>
               ) : null}
@@ -55,7 +55,7 @@ class Project extends Component {
                 <span className="link-holder">
                   <a className="project-link" href={currentProject.githubUrl}>
                     <img className="link-icon" src="github-box-black.png" />
-                    {'     '}See The Code
+                    <div>See The Code</div>
                   </a>
                 </span>
               ) : null}
@@ -66,6 +66,7 @@ class Project extends Component {
                 items={currentProject.pictures}
               />
             </div>
+            <hr className="my-2" />
             <div className="description">{currentProject.description}</div>
             <div className="stack-holder">
               <div className="tech-stack">
