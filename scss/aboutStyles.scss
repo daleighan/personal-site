@@ -39,6 +39,15 @@
   text-align: center;
 }
 
+.about-btns {
+  display: flex;
+  justify-content: center;
+}
+
+.abt-btn {
+  margin: 1em;  
+}
+
 .technologies {
   clear: both;
   margin-bottom: 4em;
@@ -69,6 +78,6 @@
     text-align: left;
   }
   .technologies {
-    margin-bottom: 2em;
+    margin-bottom: 2.3em;
   }
 }

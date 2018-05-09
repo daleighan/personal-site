@@ -31,6 +31,14 @@ const About = ({nav}) => (
         interest in AI and machine learning as well as with keeping current with
         the technologies I use. To find out more about what I have been working
         on recently, please look over to the projects section.
+        <div className="about-btns">
+          <Button className="abt-btn" onClick={() => nav.history.push('/projects')} color="info">
+            My Projects
+          </Button>
+          <Button className="abt-btn" onClick={() => console.log('resume button')} color="info">
+            My Resume
+          </Button>
+        </div>
       </p>
       <div className="technologies">
         <div className="tech-title">Preferred Technologies:</div>
@@ -45,8 +53,7 @@ const About = ({nav}) => (
         <div>Mobile: React Native</div>
         <div>Version Control: Git</div>
         <div>AWS: EC2, Lambda, RDS, Cognito</div>
-        <div>Testing: Mocha, Chai</div>
-        <div>Other: Agile Methodology, Docker, Socket.io</div>
+        <div>Other: Agile Methodology, Docker, Socket.io, Test Driven Development</div>
       </div>
     </div>
   </Container>
