@@ -35,13 +35,13 @@ const About = ({nav}) => (
           <Button className="abt-btn" onClick={() => nav.history.push('/projects')} color="info">
             My Projects
           </Button>
-          <Button className="abt-btn" onClick={() => console.log('resume button')} color="info">
+          <Button className="abt-btn" onClick={() => window.open('/Alexander+Leigh+Resume.pdf', '_blank')} color="info">
             My Resume
           </Button>
         </div>
       </p>
       <div className="technologies">
-        <div className="tech-title">Preferred Technologies:</div>
+        <div className="tech-title">Technologies:</div>
         <hr className="my-2" />
         <div>Languages: JavaScript, Python</div>
         <div>Front-End: React, Redux, HTML, CSS, SCSS, Webpack, Next.js</div>

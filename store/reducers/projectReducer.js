@@ -14,7 +14,7 @@ const projectReducer = (state = initialState, action) => {
         projects: action.payload,
       };
     case 'FETCH_SINGLE_PROJECT':
-      console.log(action.payload);
+      console.log(action.payload, 'payload');
       const nextProject =
         action.payload.currentProject.length > 0
           ? action.payload.currentProject[0]
