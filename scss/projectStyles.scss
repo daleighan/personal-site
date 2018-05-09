@@ -20,6 +20,10 @@
   justify-content: flex-end;
 }
 
+h2 {
+ text-align: center;
+}
+
 .display-3 {
   font-family: $title-font;
   color: $secondary;
@@ -125,7 +129,10 @@
   filter: invert(15%);
 }
 
-@media (min-width: 824px) {
+@media (min-width: 800px) {
+  h2 {
+    text-align: left;
+  }
   .display-3 {
     margin: 0 1em;
   }
