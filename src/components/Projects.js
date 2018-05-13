@@ -41,14 +41,6 @@ class Projects extends Component {
             ))}
           </CardGroup>
         )}
-        <div className="about-btns">
-          <Button
-            className="abt-btn"
-            onClick={() => window.open('/Alexander+Leigh+Resume.pdf', '_blank')}
-            color="info">
-            My Resume
-          </Button>
-        </div>
       </Container>
     );
   };
