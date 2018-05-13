@@ -1,5 +1,6 @@
 import React from 'react';
 import {Container, Button} from 'reactstrap';
+import scrollToTop from './scrollToTop';
 import '../../scss/aboutStyles.scss';
 
 const About = ({nav}) => (
@@ -27,7 +28,10 @@ const About = ({nav}) => (
         <div className="about-btns">
           <Button
             className="abt-btn"
-            onClick={() => nav.history.push('/projects')}
+            onClick={() => {
+              nav.history.push('/projects');
+              scrollToTop(200);
+            }}
             color="info">
             Projects
           </Button>

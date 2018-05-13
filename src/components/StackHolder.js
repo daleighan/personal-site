@@ -3,7 +3,7 @@ import React from 'react';
 const StackHolder = ({currentProject}) => (
   <div className="stack-holder">
     <div className="tech-stack">
-      <div className="stack-title">Technologies Used:</div>
+      <div className="stack-title">Tech Stack</div>
       <hr className="my-2" />
       {currentProject.techStack
         .split('\n')

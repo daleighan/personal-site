@@ -15,6 +15,7 @@
 
 .contact-btn:hover {
   color: #c4d3e2;
+  cursor: pointer;
 }
 
 .modal-content,
@@ -53,7 +54,6 @@ a:hover {
 .modal-content > h3 {
   margin: 0.5em 0 0 0.5em;
 }
-
 
 @media (max-width: 360px) {
   .nav-link {

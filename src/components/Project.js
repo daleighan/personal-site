@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Redirect} from 'react-router';
+import scrollToTop from './scrollToTop';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import {fetchProject} from '../../store/actions/projectActions';
@@ -33,7 +34,7 @@ class Project extends Component {
               <div>
                 <div className="back-button-holder">
                   <Button
-                    onClick={() => nav.history.push('/projects')}
+                    onClick={() => {nav.history.push('/projects'); scrollToTop(200)}}
                     color="info">
                     Back
                   </Button>
