@@ -9,7 +9,7 @@ const About = ({nav}) => (
         Back
       </Button>
     </div>
-    <h2 className="display-3">About Me</h2>
+    <h2 className="display-3">about me</h2>
     <hr className="my-2" />
     <div className="img-contain">
       <img src="me.jpg" />
@@ -44,7 +44,7 @@ const About = ({nav}) => (
         <div className="tech-title">Technologies:</div>
         <hr className="my-2" />
         <div>Languages: JavaScript, Python</div>
-        <div>Front-End: React, Redux, HTML, CSS, SCSS, Webpack, Next.js</div>
+        <div>Front-End: React, Redux, HTML, CSS, SCSS, Bootstrap, Webpack, Next.js</div>
         <div>
           Back-End: Node.js, Express, Flask, ReST, Sequelize, Express Session,
           JWTs
@@ -54,6 +54,7 @@ const About = ({nav}) => (
         <div>Version Control: Git</div>
         <div>AWS: EC2, Lambda, RDS, Cognito</div>
         <div>Other: Agile Methodology, Docker, Socket.io, Test Driven Development</div>
+        <a href="https://s3.amazonaws.com/daleighan.com/Alexander+Leigh+Resume.pdf" target="_blank">Resume</a>
       </div>
     </div>
   </Container>
