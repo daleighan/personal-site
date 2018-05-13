@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import ProjectsEntry from './ProjectsEntry';
+import Loading from './Loading';
 import {Container, CardGroup, Button} from 'reactstrap';
 import Typist from 'react-typist';
 import {initialFetch, setProject} from '../../store/actions/projectActions';
@@ -27,7 +28,7 @@ class Projects extends Component {
           Here are some of my most recent projects
         </h2>
         {!projectsFetched ? (
-          <div>Loading...</div>
+          <Loading projectsFetched={projectsFetched} />
         ) : (
           <CardGroup className="project-cards">
             {projects.map(project => (

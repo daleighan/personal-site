@@ -5,6 +5,7 @@ import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import {fetchProject} from '../../store/actions/projectActions';
 import {Container, Button, UncontrolledCarousel} from 'reactstrap';
+import Loading from './Loading';
 import ProjectLinks from './ProjectLinks';
 import StackHolder from './StackHolder';
 import '../../scss/projectStyles.scss';
@@ -27,14 +28,17 @@ class Project extends Component {
     return (
       <div className="project-center">
         {!projectsFetched ? (
-          <div>Loading...</div>
+          <Loading projectFetched={projectsFetched} />
         ) : (
           <Container className="project-holder">
             {currentProject !== null ? (
               <div>
                 <div className="back-button-holder">
                   <Button
-                    onClick={() => {nav.history.push('/projects'); scrollToTop(200)}}
+                    onClick={() => {
+                      nav.history.push('/projects');
+                      scrollToTop(200);
+                    }}
                     color="info">
                     Back
                   </Button>

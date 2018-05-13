@@ -1,5 +1,17 @@
 @import 'variables';
 
+.loading {
+  display: flex;
+  justify-content: center;
+}
+
+.loading-vertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 78vh;
+}
+
 .project-center {
   margin: 0 1em;
 }
