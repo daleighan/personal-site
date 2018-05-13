@@ -42,7 +42,7 @@ const Header = ({modalOpen, toggleModal}) => (
             <ModalBody>
               {headerItems.map(item => (
                 <div className="modal-entry" key={item.id}>
-                  <a href={item.ref} id={item.id}>
+                  <a href={item.ref} id={item.id} target="_blank">
                     <img className="footer-icon" src={item.src} />
                     <span className="modal-txt">{item.txt}</span>
                   </a>

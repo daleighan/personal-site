@@ -27,7 +27,7 @@ class Projects extends Component {
           Here are some of my most recent projects
         </h2>
         {!projectsFetched ? (
-          <div>Projects Not Fetched</div>
+          <div>Loading...</div>
         ) : (
           <CardGroup className="project-cards">
             {projects.map(project => (

@@ -26,7 +26,7 @@ class Project extends Component {
     return (
       <div className="project-center">
         {!projectsFetched ? (
-          <div>Loading</div>
+          <div>Loading...</div>
         ) : (
           <Container className="project-holder">
             {currentProject !== null ? (
