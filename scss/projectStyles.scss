@@ -6,6 +6,7 @@
 
 .project-holder {
   min-width: 77vw !important;
+  min-height: 93vh !important;
   background-color: $primary;
   padding: 0.5em !important;
   -webkit-box-shadow: 7px 6px 11px -2px rgba(49, 112, 142, 1);
@@ -58,7 +59,6 @@ h2 {
 .description {
   margin: 1em;
   text-indent: 20px;
-  text-align: center;
   font-family: $body-font;
   color: $secondary;
 }

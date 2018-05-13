@@ -1,6 +1,7 @@
 @import 'variables';
 
 .about-container {
+  min-height: 93vh;
   background-color: $primary;
   padding: 1em 2em !important;
   -webkit-box-shadow: 7px 6px 11px -2px rgba(49, 112, 142, 1);
@@ -36,7 +37,7 @@
 
 .about-body {
   margin-top: 1em;
-  text-align: center;
+  text-indent: 25px;
 }
 
 .about-btns {
@@ -53,6 +54,7 @@
   margin-bottom: 4em;
   font-size: 0.85em;
   text-align: left;
+  text-indent: 0;
 }
 
 .tech-title {
