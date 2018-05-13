@@ -20,13 +20,13 @@
 .modal-content,
 .modal-body {
   background-color: $primary !important;
-  color: $warning;
+  color: $secondary;
   font-family: $body-font;
 }
 
 .modal-item,
 .modal-txt {
-  color: $secondary;
+  color: $warning;
 }
 
 .modal-item {
@@ -47,16 +47,13 @@ a:hover {
 }
 
 .modal-txt {
-  margin-left: 0.5em;
+  margin-left: 1.3em;
 }
 
 .modal-content > h3 {
   margin: 0.5em 0 0 0.5em;
 }
 
-.modal-body {
-  margin-bottom: 2em;
-}
 
 @media (max-width: 360px) {
   .nav-link {
