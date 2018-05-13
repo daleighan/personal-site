@@ -38,7 +38,7 @@ const Header = ({modalOpen, toggleModal}) => (
         <NavLink className="nav-link" onClick={toggleModal}>
           <span className="contact-btn">Get In Touch</span>
           <Modal isOpen={modalOpen} toggle={toggleModal}>
-            <ModalHeader>Ways To Reach Me:</ModalHeader>
+            <ModalHeader>How to reach out</ModalHeader>
             <ModalBody>
               {headerItems.map(item => (
                 <div className="modal-entry" key={item.id}>
@@ -50,6 +50,13 @@ const Header = ({modalOpen, toggleModal}) => (
               ))}
             </ModalBody>
             <ModalFooter>
+              <Button
+                onClick={() =>
+                  window.open('/Alexander+Leigh+Resume.pdf', '_blank')
+                }
+                color="info">
+                Resume
+              </Button>
               <Button color="info" onClick={toggleModal}>
                 Close
               </Button>
