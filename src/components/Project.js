@@ -48,7 +48,7 @@ class Project extends Component {
                           className="link-icon"
                           src="link-symbol-black.png"
                         />
-                        <div>See The App</div>
+                        <div>See The Project</div>
                       </a>
                     </span>
                   ) : null}
@@ -77,7 +77,7 @@ class Project extends Component {
                     <hr className="my-2" />
                     {currentProject.techStack
                       .split('\n')
-                      .map(line => <div>{line}</div>)}
+                      .map(line => <div className="stack-item">{line}</div>)}
                   </div>
                 </div>
               </div>

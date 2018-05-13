@@ -21,7 +21,7 @@
 }
 
 h2 {
- text-align: center;
+  text-align: center;
 }
 
 .display-3 {
@@ -121,12 +121,20 @@ h2 {
   font-size: 0.85em;
 }
 
-.carousel-control-next-icon, .carousel-control-prev-icon {
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
   filter: invert(25%);
 }
 
-.carousel-control-next-icon:hover, .carousel-control-prev-icon:hover {
+.carousel-control-next-icon:hover,
+.carousel-control-prev-icon:hover {
   filter: invert(15%);
+}
+
+@media (min-width: 768px) and (max-width: 799px) and (orientation: portrait) {
+  .carousel-inner {
+    height: 410px;
+  }
 }
 
 @media (min-width: 800px) {
@@ -160,7 +168,7 @@ h2 {
 
 @media (max-width: 380px) {
   .display-3 {
-    font-size: 3.5em!important;
+    font-size: 3.5em !important;
   }
 }
 
@@ -168,5 +176,8 @@ h2 {
   .project-link > .link-icon {
     width: 20px;
     height: 20px;
+  }
+  .display-3 {
+    font-size: 3em !important;
   }
 }

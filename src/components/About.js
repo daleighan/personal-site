@@ -4,19 +4,14 @@ import '../../scss/aboutStyles.scss';
 
 const About = ({nav}) => (
   <Container className="about-container">
-    <div className="back-button-holder">
-      <Button onClick={() => nav.history.push('/')} color="info">
-        Back
-      </Button>
-    </div>
-    <h2 className="display-3">about me</h2>
+    <h2 className="display-3">About</h2>
     <hr className="my-2" />
     <div className="img-contain">
       <img src="me.jpg" />
     </div>
     <div className="about-body">
       <p>
-        Hello, and welcome to my website! If you have made it here, I am
+        Welcome to my website! If you have made it here, I am
         guessing you would like to know a bit more about me and my work. I am a
         full-stack developer who brings a uniquely creative approach to what I
         do. My background from growing up and in college classical violin which
