@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import ProjectsEntry from './ProjectsEntry';
-import {Container, CardGroup} from 'reactstrap';
+import {Container, CardGroup, Button} from 'reactstrap';
 import Typist from 'react-typist';
 import {initialFetch, setProject} from '../../store/actions/projectActions';
 import {bindActionCreators} from 'redux';
@@ -24,7 +24,7 @@ class Projects extends Component {
     return (
       <Container className="projects-body">
         <h2 className="projects-header">
-            Here are some of my most recent projects
+          Here are some of my most recent projects
         </h2>
         {!projectsFetched ? (
           <div>Projects Not Fetched</div>
@@ -40,6 +40,14 @@ class Projects extends Component {
             ))}
           </CardGroup>
         )}
+        <div className="about-btns">
+          <Button
+            className="abt-btn"
+            onClick={() => window.open('/Alexander+Leigh+Resume.pdf', '_blank')}
+            color="info">
+            My Resume
+          </Button>
+        </div>
       </Container>
     );
   };

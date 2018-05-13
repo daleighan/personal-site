@@ -11,14 +11,14 @@ const About = ({nav}) => (
     </div>
     <div className="about-body">
       <p>
-        Welcome to my website! If you have made it here, I am
-        guessing you would like to know a bit more about me and my work. I am a
-        full-stack developer who brings a uniquely creative approach to what I
-        do. My background from growing up and in college classical violin which
-        I have now played and studied for over 20 years which has caused me to
-        take an artistic approach to everything that I do. I have also had a
-        love of technology and coding from a young age which started with coding
-        games in Visual Basic and TI-Basic (for graphing calculators) and making
+        Welcome to my website! If you have made it here, I am guessing you would
+        like to know a bit more about me and my work. I am a full-stack
+        developer who brings a uniquely creative approach to what I do. My
+        background from growing up and in college classical violin which I have
+        now played and studied for over 20 years which has caused me to take an
+        artistic approach to everything that I do. I have also had a love of
+        technology and coding from a young age which started with coding games
+        in Visual Basic and TI-Basic (for graphing calculators) and making
         simple websites with HTML and CSS when I was 10 and has continued to the
         present day. Now, my specialty is in web development, with which I take
         a truly full-stack approach to the work that I do because I really like
@@ -27,11 +27,11 @@ const About = ({nav}) => (
         the technologies I use. To find out more about what I have been working
         on recently, please look over to the projects section.
         <div className="about-btns">
-          <Button className="abt-btn" onClick={() => nav.history.push('/projects')} color="info">
+          <Button
+            className="abt-btn"
+            onClick={() => nav.history.push('/projects')}
+            color="info">
             My Projects
-          </Button>
-          <Button className="abt-btn" onClick={() => window.open('/Alexander+Leigh+Resume.pdf', '_blank')} color="info">
-            My Resume
           </Button>
         </div>
       </p>
@@ -39,7 +39,9 @@ const About = ({nav}) => (
         <div className="tech-title">Technologies:</div>
         <hr className="my-2" />
         <div>Languages: JavaScript, Python</div>
-        <div>Front-End: React, Redux, HTML, CSS, SCSS, Bootstrap, Webpack, Next.js</div>
+        <div>
+          Front-End: React, Redux, HTML, CSS, SCSS, Bootstrap, Webpack, Next.js
+        </div>
         <div>
           Back-End: Node.js, Express, Flask, ReST, Sequelize, Express Session,
           JWTs
@@ -48,8 +50,14 @@ const About = ({nav}) => (
         <div>Mobile: React Native</div>
         <div>Version Control: Git</div>
         <div>AWS: EC2, Lambda, RDS, Cognito</div>
-        <div>Other: Agile Methodology, Docker, Socket.io, Test Driven Development</div>
-        <a href="https://s3.amazonaws.com/daleighan.com/Alexander+Leigh+Resume.pdf" target="_blank">Resume</a>
+        <div>
+          Other: Agile Methodology, Docker, Socket.io, Test Driven Development
+        </div>
+        <a
+          href="https://s3.amazonaws.com/daleighan.com/Alexander+Leigh+Resume.pdf"
+          target="_blank">
+          Resume
+        </a>
       </div>
     </div>
   </Container>
