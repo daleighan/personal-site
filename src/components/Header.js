@@ -55,7 +55,7 @@ const Header = ({modalOpen, toggleModal}) => (
                   window.open('/Alexander+Leigh+Resume.pdf', '_blank')
                 }
                 color="info">
-                Resume
+                My Resume
               </Button>
               <Button color="info" onClick={toggleModal}>
                 Close
