@@ -19,13 +19,13 @@ const footerItems = [
     ref: 'https://github.com/daleighan',
     id: 'githubTooltip',
     src: 'github-box.png',
-    text: 'My GitHub',
+    text: 'GitHub',
   },
   {
     ref: 'https://www.linkedin.com/in/alexander-leigh',
     id: 'linkedinTooltip',
     src: 'linkedin-box.png',
-    text: 'My LinkedIn',
+    text: 'LinkedIn',
   },
 ];
 

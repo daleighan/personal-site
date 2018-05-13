@@ -4,6 +4,7 @@ import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import {fetchProject} from '../../store/actions/projectActions';
 import {Container, Button, UncontrolledCarousel} from 'reactstrap';
+import ProjectLinks from './ProjectLinks';
 import '../../scss/projectStyles.scss';
 
 class Project extends Component {
@@ -38,31 +39,7 @@ class Project extends Component {
                 </div>
                 <h2 className="display-3">{currentProject.projectName}</h2>
                 <hr className="my-2" />
-                <div className="link-box">
-                  {currentProject.projectUrl ? (
-                    <span className="link-holder">
-                      <a
-                        className="project-link"
-                        href={currentProject.projectUrl}>
-                        <img
-                          className="link-icon"
-                          src="link-symbol-black.png"
-                        />
-                        <div>See The Project</div>
-                      </a>
-                    </span>
-                  ) : null}
-                  {currentProject.githubUrl ? (
-                    <span className="link-holder">
-                      <a
-                        className="project-link"
-                        href={currentProject.githubUrl}>
-                        <img className="link-icon" src="github-box-black.png" />
-                        <div>See The Code</div>
-                      </a>
-                    </span>
-                  ) : null}
-                </div>
+                <ProjectLinks currentProject={currentProject} />
                 <div className="carousel-holder">
                   <UncontrolledCarousel
                     autoPlay={false}
