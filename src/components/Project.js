@@ -5,6 +5,7 @@ import {connect} from 'react-redux';
 import {fetchProject} from '../../store/actions/projectActions';
 import {Container, Button, UncontrolledCarousel} from 'reactstrap';
 import ProjectLinks from './ProjectLinks';
+import StackHolder from './StackHolder';
 import '../../scss/projectStyles.scss';
 
 class Project extends Component {
@@ -48,15 +49,7 @@ class Project extends Component {
                 </div>
                 <hr className="my-2" />
                 <div className="description">{currentProject.description}</div>
-                <div className="stack-holder">
-                  <div className="tech-stack">
-                    <div className="stack-title">Technologies Used:</div>
-                    <hr className="my-2" />
-                    {currentProject.techStack
-                      .split('\n')
-                      .map(line => <div className="stack-item">{line}</div>)}
-                  </div>
-                </div>
+                <StackHolder currentProject={currentProject} />
               </div>
             ) : (
               <Redirect to="/" />
