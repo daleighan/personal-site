@@ -1,4 +1,5 @@
 import React from 'react';
+import headerItems from './headerItems';
 import {Link} from 'react-router-dom';
 import {
   Navbar,
@@ -16,38 +17,6 @@ import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import {toggleModal} from '../../store/actions/projectActions';
 import '../../scss/headerStyles.scss';
-
-const contactItems = [
-  {
-    ref: 'tel:1-202-550-0872',
-    txt: '202-550-0872',
-    id: 'phoneTooltip',
-    src: 'cellphone-android-black.png',
-    text: 'Call Me',
-    name: 'Phone',
-  },
-  {
-    ref: 'mailto:daleighan@gmail.com',
-    txt: 'daleighan@gmail.com',
-    id: 'emailTooltip',
-    src: 'email-black.png',
-    name: 'E-mail',
-  },
-  {
-    ref: 'https://github.com/daleighan',
-    txt: 'github.com/daleighan',
-    id: 'githubTooltip',
-    src: 'github-box-black.png',
-    name: 'GitHub',
-  },
-  {
-    ref: 'https://www.linkedin.com/in/alexander-leigh',
-    txt: 'linkedin.com/in/alexander-leigh',
-    id: 'linkedinTooltip',
-    src: 'linkedin-box-black.png',
-    name: 'LinkedIn',
-  },
-];
 
 const Header = ({modalOpen, toggleModal}) => (
   <Navbar className="custom-header" color="dark" light>
@@ -71,7 +40,7 @@ const Header = ({modalOpen, toggleModal}) => (
           <Modal isOpen={modalOpen} toggle={toggleModal}>
             <h3>Ways To Reach Me:</h3>
             <ModalBody>
-              {contactItems.map(item => (
+              {headerItems.map(item => (
                 <div className="modal-entry" key={item.id}>
                   <a href={item.ref} id={item.id}>
                     <img className="footer-icon" src={item.src} />
