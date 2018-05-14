@@ -5,7 +5,7 @@ import '../../scss/aboutStyles.scss';
 
 const About = ({nav}) => (
   <Container className="about-container">
-    <h2 className="display-3">About</h2>
+    <h2 className="display-3">About Me</h2>
     <hr className="my-2" />
     <div className="img-contain">
       <img src="me.jpg" />
