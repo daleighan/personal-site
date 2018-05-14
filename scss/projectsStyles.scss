@@ -4,7 +4,13 @@
   font-family: $body-font;
   margin-top: 1em;
   text-align: center;
+  background-color: $primary;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
   color: $secondary;
+  -webkit-box-shadow: 7px 6px 11px -2px rgba(49, 112, 142, 1);
+  -moz-box-shadow: 7px 6px 11px -2px rgba(49, 112, 142, 1);
+  box-shadow: 7px 6px 11px -2px rgba(49, 112, 142, 1);
 }
 
 .projects-body {
