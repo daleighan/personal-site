@@ -12,7 +12,7 @@ const About = ({nav}) => (
     </div>
     <div className="about-body">
       <p>
-        Welcome to my website! I am a full-stack web developer aspires to bring
+        Welcome to my website! I am a full-stack web developer who aspires to bring
         a uniquely creative approach to what I do. My background growing up and
         through college is in classical violin which I have played and studied
         for over 20 years. This has caused me to have a pervasive artistic
