@@ -48,7 +48,7 @@ class Project extends Component {
                 <ProjectLinks currentProject={currentProject} />
                 <div className="carousel-holder">
                   <UncontrolledCarousel
-                    autoPlay={false}
+                    autoPlay={true}
                     items={currentProject.pictures}
                   />
                 </div>
