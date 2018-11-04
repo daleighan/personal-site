@@ -46,13 +46,12 @@ const About = ({nav}) => (
           Next.js
         </div>
         <div>
-          Back-End: Node.js, Express, Flask, REST, Sequelize, Express Session,
-          JWTs
+          Back-End: Node.js, Express, Flask, REST, Sequelize
         </div>
-        <div>Databases: SQL, PostgreSQL, DynamoDB</div>
+        <div>Databases: MySQL, PostgreSQL, DynamoDB</div>
+
         <div>Version Control: Git</div>
-        <div>AWS: EC2, Lambda, RDS, Cognito, S3, CloudFront, Route 53</div>
-        <div>Techniques: Agile Methodology, Test Driven Development</div>
+        <div>AWS: EC2, Lambda, RDS, Cognito, S3</div>
         <a
           href="https://s3.amazonaws.com/daleighan.com/Alexander+Leigh+Resume.pdf"
           target="_blank">
