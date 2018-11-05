@@ -12,17 +12,17 @@ const About = ({nav}) => (
     </div>
     <div className="about-body">
       <p>
-        Welcome to my website! I am a full-stack web developer who aspires to bring
+        Welcome to my website! I am a full-stack developer who aspires to bring
         a uniquely creative approach to what I do. My background growing up and
         through college is in classical violin which I have played and studied
         for over 20 years. This has caused me to have a pervasive artistic
         approach to all aspects of my life. I have also had a passion for coding
         and technology from the age of 10 which started with coding games in
         BASIC for computers and graphing calculators and making simple websites
-        with HTML and CSS. Now, my speciality is in web development, to which I
+        with HTML and CSS. Now, my speciality is web development, to which I
         bring a full-stack approach because I appreciate having the entire
         picture of projects I work on. I also maintain a deep interest in AI and
-        machine learning as well as with learning and using cutting edge new
+        machine learning as well as with using cutting edge new
         technologies. To find out more about what I have been working on
         recently, please check out my projects.
         <div className="about-btns">
