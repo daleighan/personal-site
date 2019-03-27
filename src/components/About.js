@@ -22,10 +22,18 @@ const About = ({nav}) => (
         with HTML and CSS. Now, my speciality is web development, to which I
         bring a full-stack approach because I appreciate having the entire
         picture of projects I work on. I also maintain a deep interest in AI and
-        machine learning as well as with using cutting edge new
-        technologies. To find out more about what I have been working on
-        recently, please check out my projects.
+        machine learning as well as with using cutting edge new technologies. I
+        am currently a software developer at WaiveCar in Los Angeles, CA.
         <div className="about-btns">
+          <Button
+            className="abt-btn"
+            onClick={() => {
+              window.location = 'http://daleighan.com/Alexander+Leigh+Resume.pdf';
+              scrollToTop(200);
+            }}
+            color="info">
+            My Resume
+          </Button>
           <Button
             className="abt-btn"
             onClick={() => {
@@ -45,9 +53,7 @@ const About = ({nav}) => (
           Front-End: React, Redux, React Native, Sass, Bootstrap, Webpack,
           Next.js
         </div>
-        <div>
-          Back-End: Node.js, Express, Flask, REST, Sequelize
-        </div>
+        <div>Back-End: Node.js, Express, Flask, REST, Sequelize</div>
         <div>Databases: MySQL, PostgreSQL, DynamoDB</div>
 
         <div>Version Control: Git</div>
